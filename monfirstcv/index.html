@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="an">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon cv</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <section class="banner" id="home">
+        <div class="imgsidebar">
+            <img src="pcv.jfif" alt="">
+        </div>
+        <div class="contentbx">
+          <h5 class="logotext">mon_cv</h5>
+            <div>
+                   <h4><span>Salut</span>,je suis</h4>
+                   <h2>Wael Taieb</h2>
+                   <h4>Je suis un Front End Devloppeur.</h4>
+                   <p>Je suis un etudiant de l'instituts Superieurs des etutude Technologiques Tozeur.<br/>J'etudie deuxieme
+                    annee developpement et multimedia
+                    </p>
+                    <a href="#" class="btn">About me</a>
+             </div>
+             <ul class="sci">
+                <li><a href="#"><img src="facebook.png" ></a></li>
+                <li><a href="#"><img src="twitter.png" ></a></li>
+                <li><a href="#"><img src="instagram.png" ></a></li>
+    
+            </ul>
+
+        </div>
+        
+    </section>
+    <section class="formation" id="formation">
+        <div class="title white">
+            <h2> Diplome ET Formation </h2>
+            
+        </div>
+        <div class="content">
+            <div class="textbx">
+                <p>
+                   <br> Baccalaureat section Science de l'informatique <br> <br> Juil.2020
+                    <br><br><br>
+
+
+                </p>
+
+            </div>
+            <div class="imgbx">
+                <img src="formation-diplomante-certifiante.jpg" >
+
+            </div>
+
+        </div>
+
+    </section>
+   
+    <section class="competance" id="competance">
+        <div class="title">
+            <h2>Mon Competance</h2>
+            <p>j'ai capabel pour utiliser html 5 et feuille de style css 3.
+                Aussi j'utilise la language de programmation JavaScript </p>
+
+        </div>
+        <div class="content">
+          <div class="competanceBx">
+            <img src="1200px-HTML5_logo_and_wordmark.svg.png">
+            <h2>HTML 5</h2>
+            <p>HyperText Markup Language 5 est la dernière révision majeure du HTML 
+                format de données conçu pour représenter les pages web </p>
+          </div>
+          <div class="competanceBx">
+            <img src="CSS3_logo_and_wordmark.svg.png">
+            <h2>CSS 3</h2>
+            <p>Le CSS pour Cascading Style Sheets, est un langage informatique utilisé sur Internet pour la mise 
+                en forme de fichiers et de pages HTML. </p>
+          </div>
+          <div class="competanceBx">
+            <img src="Javascript_badge.png">
+            <h2>JavaScript</h2>
+            <p> désigne un langage de développement informatique, et plus précisément un langage
+                de script orienté objet.  </p>
+          </div>
+
+        </div>
+
+    </section>
+    <section class="contact" id="Contact">
+        <div class="title white">
+            <h2> Contact </h2>
+           
+        </div>
+        <div class="contactform">
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="" placeholder="First Name"> 
+                </div>
+                <div class="col">
+                    <input type="text" name="" placeholder="Last Name"> 
+                </div>
+                <div class="col">
+                    <input type="text" name="" placeholder="Email"> 
+                </div>
+                <div class="col">
+                    <input type="text" name="" placeholder="N° Mobile"> 
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col2">
+                    <textarea placeholder="Message"></textarea>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col2">
+                 <input type="submit" value="send">
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home"  onclick="toggleMenu()";>Home</a>  </li>
+            <li><a href="#formation"  onclick="toggleMenu();"> Formation</a> </li>
+            <li><a href="#competance" onclick="toggleMenu();"> Competance</a> </li>
+            <li><a href="#Contact" onclick="toggleMenu();">Contact</a>  </li>
+
+        </ul>
+    </div>
+
+
+
+
+    <script > 
+    
+     function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+   
+    menuToggle.classList.toggle('active');
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+}  
+    
+    </script>
+   
+    
+</body>
+</html>
